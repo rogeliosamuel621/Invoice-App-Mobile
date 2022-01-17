@@ -22,7 +22,7 @@ const darkThemeStyles = (isDarkMode: boolean) => {
       alignItems: 'center',
       backgroundColor: isDarkMode ? colors.primaryDark : colors.lightNav,
       paddingRight: 20,
-      marginTop: 20
+      marginTop: 35
     }
   })
 }

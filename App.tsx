@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { DarkThemeProvider } from './src/common/contexts/DarkTheme/DarkThemeProvider'
-import { HomeScreen } from './src/modules/HomeView'
+import { HomeScreen } from './src/modules/Home/HomeView'
 
 const Stack = createNativeStackNavigator()
 
