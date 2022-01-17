@@ -10,5 +10,9 @@ export const colors = {
   primaryRed: '#EC5757',
   secondaryRed: '#FF9797',
   light: '#F8F8FB',
-  dark: '#141625'
+  dark: '#141625',
+
+  // No in design system
+
+  lightNav: '#373B53'
 }
