@@ -1,17 +1,22 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { Header } from '../common/components/containers/Header'
+import { colors } from '../common/constants/colors'
+import { useDarkThemeContext } from '../common/contexts/DarkTheme/DarkThemeProvider'
 
 export const HomeScreen = () => {
+  const { isDarkMode } = useDarkThemeContext()
   return (
-    <View style={styles.home}>
+    <View style={darkThemeStyles(isDarkMode).home}>
       <Header />
     </View>
   )
 }
 
-const styles = StyleSheet.create({
-  home: {
-    backgroundColor: '#141625',
-    height: '100%'
-  }
-})
+const darkThemeStyles = (d: boolean) => {
+  return StyleSheet.create({
+    home: {
+      backgroundColor: d ? colors.dark : colors.light,
+      height: '100%'
+    }
+  })
+}
