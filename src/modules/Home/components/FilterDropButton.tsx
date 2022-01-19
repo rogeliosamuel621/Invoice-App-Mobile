@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
 import { colors } from '../../../common/constants/colors'
 import { useDarkThemeContext } from '../../../common/contexts/DarkTheme/DarkThemeProvider'
