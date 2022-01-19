@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import { colors } from '../../../common/constants/colors'
 import { useDarkThemeContext } from '../../../common/contexts/DarkTheme/DarkThemeProvider'
+import { FilterMenu } from './FilterMenu'
 
 export const FilterDropButton = () => {
   const { isDarkMode } = useDarkThemeContext()
@@ -8,6 +9,7 @@ export const FilterDropButton = () => {
     <View style={darkThemeStyles(isDarkMode).filterDropButton}>
       <Text style={darkThemeStyles(isDarkMode).filterText}>Filter</Text>
       <Image source={require('../../../../assets/drop.png')} style={{ width: 8, height: 8 }} />
+      <FilterMenu />
     </View>
   )
 }
