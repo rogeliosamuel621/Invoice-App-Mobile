@@ -1,6 +1,7 @@
 import { StyleSheet, View } from 'react-native'
 import { colors } from '../../../common/constants/colors'
 import { useDarkThemeContext } from '../../../common/contexts/DarkTheme/DarkThemeProvider'
+import { useModal } from '../../../common/hooks/useModal'
 import { FilterMenuItem } from './FilterMenuItem'
 
 export const FilterMenu = () => {
