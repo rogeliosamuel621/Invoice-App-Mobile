@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { PageTitle } from '../../../common/components/atoms/PageTitle'
 import { colors } from '../../../common/constants/colors'
 import { useDarkThemeContext } from '../../../common/contexts/DarkTheme/DarkThemeProvider'
+import { AddInvoiceButton } from './AddInvoiceButton'
 import { FilterDropButton } from './FilterDropButton'
 
 export const HomeOptions = () => {
@@ -12,8 +13,9 @@ export const HomeOptions = () => {
         <PageTitle title="Invoices" />
         <Text style={darkThemeStyles(isDarkMode).numOfInvoicesSubtitle}>7 invoices</Text>
       </View>
-      <View>
+      <View style={darkThemeStyles(isDarkMode).homeOptionsOptions}>
         <FilterDropButton />
+        <AddInvoiceButton />
       </View>
     </View>
   )
@@ -30,6 +32,10 @@ const darkThemeStyles = (d: boolean) => {
     },
     numOfInvoicesSubtitle: {
       color: d ? colors.secondaryGray : colors.primaryGray
+    },
+    homeOptionsOptions: {
+      flexDirection: 'row',
+      justifyContent: 'space-between'
     }
   })
 }

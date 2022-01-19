@@ -7,7 +7,7 @@ export const FilterDropButton = () => {
   return (
     <View style={darkThemeStyles(isDarkMode).filterDropButton}>
       <Text style={darkThemeStyles(isDarkMode).filterText}>Filter</Text>
-      <Image source={require('../../../../assets/drop.png')} />
+      <Image source={require('../../../../assets/drop.png')} style={{ width: 8, height: 8 }} />
     </View>
   )
 }
@@ -16,11 +16,13 @@ const darkThemeStyles = (d: boolean) => {
   return StyleSheet.create({
     filterDropButton: {
       flexDirection: 'row',
-      alignItems: 'center'
+      alignItems: 'center',
+      marginRight: 18
     },
     filterText: {
       color: d ? '#FFF' : colors.primaryBlue,
-      paddingRight: 12
+      paddingRight: 12,
+      fontWeight: '700'
     }
   })
 }
