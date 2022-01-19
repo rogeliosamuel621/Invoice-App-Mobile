@@ -13,15 +13,15 @@ export const useCheckFilterMenuItem = () => {
 
   const activateDraftFilter = () => {
     clear()
-    setIsDraftFilterActive(true)
+    setIsDraftFilterActive(isDraftFilterActive ? false : true)
   }
   const activatePendingFilter = () => {
     clear()
-    setIsPendingFilterActive(true)
+    setIsPendingFilterActive(isPendingFilterActive ? false : true)
   }
   const activatePaidFilter = () => {
     clear()
-    setIsPaidFilterActive(true)
+    setIsPaidFilterActive(isPaidFilterActive ? false : true)
   }
 
   return {
