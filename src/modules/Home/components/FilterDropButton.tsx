@@ -8,7 +8,10 @@ export const FilterDropButton = () => {
   return (
     <View style={darkThemeStyles(isDarkMode).filterDropButton}>
       <Text style={darkThemeStyles(isDarkMode).filterText}>Filter</Text>
-      <Image source={require('../../../../assets/drop.png')} style={{ width: 8, height: 8 }} />
+      <Image
+        source={require('../../../../assets/drop.png')}
+        style={{ width: 8.46, height: 4.23 }}
+      />
       <FilterMenu />
     </View>
   )

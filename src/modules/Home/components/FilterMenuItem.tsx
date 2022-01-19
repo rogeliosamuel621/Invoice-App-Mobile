@@ -3,6 +3,7 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import { colors } from '../../../common/constants/colors'
 import { useDarkThemeContext } from '../../../common/contexts/DarkTheme/DarkThemeProvider'
 import { getTextFromInvoiceType } from '../../../common/helpers/invoices'
+import { TInvoiceStatus } from '../../../common/interfaces/invoice.interface'
 
 export const FilterMenuItem: FC<Props> = ({ isChecked, text }) => {
   const { isDarkMode } = useDarkThemeContext()
@@ -26,7 +27,7 @@ export const FilterMenuItem: FC<Props> = ({ isChecked, text }) => {
 
 type Props = {
   isChecked?: boolean
-  text: 'paid' | 'pending' | 'draft'
+  text: TInvoiceStatus
 }
 
 const darkThemeStyles = (d: boolean) => {
