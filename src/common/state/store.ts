@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import invoiceReducer from './invoices.slice'
+import invoicesReducer from './invoices-status.slice'
 
 export const store = configureStore({
   reducer: {
-    invoices: invoiceReducer
+    invoices: invoiceReducer,
+    invoicesStatus: invoicesReducer
   }
 })
 

@@ -32,4 +32,4 @@ export interface IInvoice {
   total: number
 }
 
-export type TInvoiceStatus = 'paid' | 'pending' | 'draft'
+export type TInvoiceStatus = 'paid' | 'pending' | 'draft' | ''
