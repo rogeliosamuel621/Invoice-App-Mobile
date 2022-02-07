@@ -19,4 +19,4 @@ export const useFetch = <T>(fetchFunc: FetchFunc<T>) => {
   return { data, isLoading }
 }
 
-type FetchFunc<T> = () => T
+type FetchFunc<T> = () => Promise<T>
