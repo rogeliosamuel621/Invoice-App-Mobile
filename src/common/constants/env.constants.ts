@@ -1,4 +1,4 @@
 // @ts-ignore
-import { TEST } from '@env'
+import { API_DOMAIN } from '@env'
 
-export const test = TEST || ''
+export const apiDomain = API_DOMAIN || 'https://invoice-api-rs.herokuapp.com'
