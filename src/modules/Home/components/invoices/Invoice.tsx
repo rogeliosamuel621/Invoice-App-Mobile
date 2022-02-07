@@ -25,7 +25,7 @@ export const Invoice: FC<Props> = ({ id, customerName, date, total, status }) =>
 type Props = {
   id: string
   customerName: string
-  date: string
+  date: Date
   total: number
   status: TInvoiceStatusState
 }
