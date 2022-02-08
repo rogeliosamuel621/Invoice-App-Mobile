@@ -3,6 +3,7 @@ import { Header } from '../../common/components/containers/Header'
 import { colors } from '../../common/constants/colors'
 import { useDarkThemeContext } from '../../common/contexts/DarkTheme/DarkThemeProvider'
 import { HomeOptions } from './components/HomeOptions'
+import { Invoices } from './components/invoices/Invoices'
 
 export const HomeScreen = () => {
   const { isDarkMode } = useDarkThemeContext()
@@ -10,6 +11,7 @@ export const HomeScreen = () => {
     <View style={darkThemeStyles(isDarkMode).home}>
       <Header />
       <HomeOptions />
+      <Invoices />
     </View>
   )
 }
